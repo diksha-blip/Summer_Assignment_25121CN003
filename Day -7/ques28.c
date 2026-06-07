@@ -9,7 +9,7 @@ void reverseNumber(int n)
     if(n == 0)
         return ;
 
-        reverse = reverse * 10 +(n % 10);
+        reverse = reverse * 10 + g(n % 10);
         reverseNumber (n/10);
 
 }
@@ -26,5 +26,6 @@ int main()
     return 0;
 
 }
+
 
   
