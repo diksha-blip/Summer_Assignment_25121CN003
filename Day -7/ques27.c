@@ -1,24 +1,21 @@
-//program to recursive sum of digits 
- #include <stdio.h>
+//program to recursive sum of digits
 
- int sum(int n)
- {
-    if(n == 1)
-    return 1;
-else
-    return n + sum(n-1);
- }
-
-int main ()
+#include<stdio.h>
+int sum(int n)
 {
-    int n ;
-
-    printf("Enter a positive integer:");
-    scanf("%d", &n);
-
-printf("Sum = %d\n" , sum(n));
-
-return 0;
+    if (n==1)
+      return  1;
+    else
+    return n+sum (n-1);
 }
 
+int main()
+{
+    int n;
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
 
+    printf("Sum = %d\n", sum(n));
+
+    return 0;
+}
